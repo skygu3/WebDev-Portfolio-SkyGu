@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Design Thinking | Sky Gu</title>
+        <link rel="icon" type="image/png" href="barca icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="global-goal.html">Global Goal</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design-thinking.html">Behind the Curtain</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+
+        <header>
+            <h1>Design Thinking</h1>
+        </header>
+
+        <div class="card">
+            <h2>My Define Statement</h2>
+            <p><strong>A Grade 12 student</strong> needs a way to <strong>present their coding skills and personality online</strong> so as to <strong>build a personal portfolio and share their work with others</strong>.</p>
+        </div>
+
+        <hr>
+
+        <h2>The 5 Stages</h2>
+
+        <div class="stages">
+            <div class="stage">
+                <h3>1. Empathize</h3>
+                <p>I thought about who would visit my site — classmates, teachers, or future employers.</p>
+            </div>
+            <div class="stage">
+                <h3>2. Define</h3>
+                <p>I needed a clear, readable site that shows my skills without being confusing.</p>
+            </div>
+            <div class="stage">
+                <h3>3. Ideate</h3>
+                <p>I sketched different layouts and considered color schemes and page structure.</p>
+            </div>
+            <div class="stage">
+                <h3>4. Prototype</h3>
+                <p>I built the site starting with index.html, then CSS, then more pages one at a time.</p>
+            </div>
+            <div class="stage">
+                <h3>5. Test</h3>
+                <p>I tested in the browser at every step and used DevTools to fix layout issues.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Design Principles I Applied</h2>
+
+        <div class="card">
+            <h3>Visual Hierarchy</h3>
+            <p>Larger headings draw attention to the most important content. The footer is small and gray so it does not compete with the main content.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consistency</h3>
+            <p>Every page uses the same nav bar, card style, color scheme, and font. This makes the site feel unified.</p>
+        </div>
+
+        <div class="card">
+            <h3>Navigability</h3>
+            <p>The nav bar appears at the top of every page. Users can always find their way without using the browser back button.</p>
+        </div>
+
+        <div class="card">
+            <h3>Color &amp; Typography</h3>
+            <p>I used Arial with Helvetica as fallback for the main text, and a rounded font for the welcome page. Dark blue on the soft white background gives strong contrast. Dark red is used only for hover effects and accents.</p>
+        </div>
+
+        <hr>
+
+        <h2>Beyond the Course</h2>
+        <p>Some features on this site go beyond what we learned in CS12. I researched them online and used AI assistance to add them. Here is a quick list of the extra tools I used:</p>
+
+        <div class="card">
+            <h3>Extra JavaScript</h3>
+            <ul>
+                <li><strong>var</strong> variables to remember the chosen reading speed</li>
+                <li><strong>Web Speech API</strong> (speechSynthesis) for the Read Aloud feature</li>
+                <li>The <strong>event</strong> object and changing element <strong>.style</strong> to update buttons and pop-ups</li>
+                <li><strong>sessionStorage</strong> to remember if the visitor has already entered the site</li>
+                <li>The <strong>Performance Navigation API</strong> to tell a page refresh apart from clicking Home, so the welcome page only shows on first load or refresh</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Extra CSS</h3>
+            <ul>
+                <li><strong>opacity</strong>, <strong>visibility</strong> and <strong>transition</strong> for smooth fade in and fade out effects</li>
+                <li><strong>backdrop-filter: blur</strong> to blur the background behind the team photo</li>
+                <li><strong>rgba()</strong> colors for semi-transparent overlays and borders</li>
+                <li><strong>linear-gradient</strong> over a background image to blend the team photo with white for the whole-site background</li>
+                <li><strong>background-attachment: fixed</strong> to keep that background still while scrolling</li>
+                <li><strong>letter-spacing</strong> to soften the look of the welcome text</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <footer>
+            <small>&copy; 2026 Sky Gu. All rights reserved.</small>
+        </footer>
+
+        <div class="tts-wrap" id="tts-wrap">
+            <div class="tts-toggle" onclick="toggleTTS()"><span id="tts-arrow">&#9660;</span></div>
+            <div class="tts-bar" id="tts-bar">
+                <button type="button" onclick="readPage()">&#9654; Read</button>
+                <button type="button" id="btn-stop" onclick="stopReading()"><span style="font-size: 1.4em;">&#9632;</span> Stop</button>
+                <button type="button" id="btn-05" onclick="setSpeed(0.5, 'btn-05')">0.5x</button>
+                <button type="button" id="btn-1" style="background-color: darkred;" onclick="setSpeed(1, 'btn-1')">1x</button>
+                <button type="button" id="btn-15" onclick="setSpeed(1.5, 'btn-15')">1.5x</button>
+                <button type="button" id="btn-2" onclick="setSpeed(2, 'btn-2')">2x</button>
+            </div>
+        </div>
+
+        <div class="intro" id="intro" onclick="enterSite()">
+            <p class="intro-text"><span>Press to enter</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

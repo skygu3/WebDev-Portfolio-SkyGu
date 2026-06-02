@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accessibility | Sky Gu</title>
+        <link rel="icon" type="image/png" href="barca icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="global-goal.html">Global Goal</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design-thinking.html">Behind the Curtain</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+
+        <header>
+            <h1>Accessibility Statement</h1>
+        </header>
+
+        <div class="card">
+            <h2>What Is Web Accessibility?</h2>
+            <p>Web accessibility means designing websites so that people with disabilities can use them effectively. Good accessibility also benefits everyone, including people using small screens or slow connections.</p>
+        </div>
+
+        <hr>
+
+        <h2>Features on This Site</h2>
+
+        <div class="card">
+            <h3>Language Declaration</h3>
+            <p>Every page has <strong>lang="en"</strong> on the html tag so screen readers know what language to use.</p>
+        </div>
+
+        <div class="card">
+            <h3>Descriptive Alt Text</h3>
+            <p>Every image has a meaningful <strong>alt</strong> attribute. For example: <em>alt="Pedri, my loved FC Barcelona player"</em>.</p>
+        </div>
+
+        <div class="card">
+            <h3>Semantic HTML</h3>
+            <p>This site uses <strong>header</strong>, <strong>nav</strong>, and <strong>footer</strong> instead of plain divs everywhere. This gives screen readers a meaningful structure to navigate.</p>
+        </div>
+
+        <div class="card">
+            <h3>Heading Hierarchy</h3>
+            <p>Headings go in order: h1 → h2 → h3. Screen readers use headings to let users jump between sections.</p>
+        </div>
+
+        <div class="card">
+            <h3>Color Contrast</h3>
+            <p>Dark blue text sits on a soft white background (the team photo is faded almost fully into white), which keeps strong contrast. White text is used on dark blue backgrounds such as the nav bar and headers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Meaningful Link Text</h3>
+            <p>Links use descriptive text like <em>"My GitHub Repositories"</em> rather than "click here". Links also have <strong>title</strong> attributes for extra context.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Design</h3>
+            <p>The layout adapts to different screen sizes using media queries. Users on mobile will still see a readable layout.</p>
+        </div>
+
+        <div class="card">
+            <h3>Read Aloud</h3>
+            <p>Every page has a <strong>Read Aloud</strong> bar at the bottom. Clicking <em>Read</em> reads the page content out loud using the browser's built-in text-to-speech engine. Users can also choose a playback speed: 0.5x, 1x, 1.5x, or 2x. The bar can be collapsed or reopened with a small arrow so it never blocks the content. This helps users with reading difficulties or visual impairments. I researched this feature online and used AI assistance to implement it, as it goes beyond the JavaScript taught in CS12.</p>
+        </div>
+
+        <hr>
+
+        <h2>What I Would Improve With More Time</h2>
+
+        <ul class="access-list">
+            <li>Add skip navigation links for keyboard users</li>
+            <li>Test with a real screen reader such as NVDA or VoiceOver</li>
+            <li>Verify contrast ratios meet WCAG AA standard (4.5:1 minimum)</li>
+        </ul>
+
+        </div>
+
+        <footer>
+            <small>&copy; 2026 Sky Gu. All rights reserved.</small>
+        </footer>
+
+        <div class="tts-wrap" id="tts-wrap">
+            <div class="tts-toggle" onclick="toggleTTS()"><span id="tts-arrow">&#9660;</span></div>
+            <div class="tts-bar" id="tts-bar">
+                <button type="button" onclick="readPage()">&#9654; Read</button>
+                <button type="button" id="btn-stop" onclick="stopReading()"><span style="font-size: 1.4em;">&#9632;</span> Stop</button>
+                <button type="button" id="btn-05" onclick="setSpeed(0.5, 'btn-05')">0.5x</button>
+                <button type="button" id="btn-1" style="background-color: darkred;" onclick="setSpeed(1, 'btn-1')">1x</button>
+                <button type="button" id="btn-15" onclick="setSpeed(1.5, 'btn-15')">1.5x</button>
+                <button type="button" id="btn-2" onclick="setSpeed(2, 'btn-2')">2x</button>
+            </div>
+        </div>
+
+        <div class="intro" id="intro" onclick="enterSite()">
+            <p class="intro-text"><span>Press to enter</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

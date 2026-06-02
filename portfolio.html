@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio | Sky Gu</title>
+        <link rel="icon" type="image/png" href="barca icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="global-goal.html">Global Goal</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design-thinking.html">Behind the Curtain</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+
+        <header>
+            <h1>My Portfolio</h1>
+        </header>
+
+        <h2>My Hobbies</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <h3>Gaming</h3>
+                <p>I enjoy FPS (First Person Shooter) and strategy games. They help me think critically and creatively, and also bring me happiness.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Music</h3>
+                <p>I listen to a wide range of music. It helps me focus when I study or code. Music is part of my life.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Sports</h3>
+                <p>Basketball, soccer, and hockey. FC Barcelona is my favourite team.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Explore My Interests</h2>
+        <p>Click a button to learn more:</p>
+
+        <div class="hobby-buttons">
+            <button type="button" onclick="showGaming()">Gaming</button>
+            <button type="button" onclick="showMusic()">Music</button>
+            <button type="button" onclick="showSports()">Sports</button>
+        </div>
+
+        <div class="hobby-detail" id="hobby-detail">
+            <p>Select an interest above to see more details.</p>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>This Website</h2>
+            <p>I built this website using HTML, CSS, and JavaScript as part of my CS12 course.</p>
+        </div>
+
+        </div>
+
+        <footer>
+            <small>&copy; 2026 Sky Gu. All rights reserved.</small>
+        </footer>
+
+        <div class="tts-wrap" id="tts-wrap">
+            <div class="tts-toggle" onclick="toggleTTS()"><span id="tts-arrow">&#9660;</span></div>
+            <div class="tts-bar" id="tts-bar">
+                <button type="button" onclick="readPage()">&#9654; Read</button>
+                <button type="button" id="btn-stop" onclick="stopReading()"><span style="font-size: 1.4em;">&#9632;</span> Stop</button>
+                <button type="button" id="btn-05" onclick="setSpeed(0.5, 'btn-05')">0.5x</button>
+                <button type="button" id="btn-1" style="background-color: darkred;" onclick="setSpeed(1, 'btn-1')">1x</button>
+                <button type="button" id="btn-15" onclick="setSpeed(1.5, 'btn-15')">1.5x</button>
+                <button type="button" id="btn-2" onclick="setSpeed(2, 'btn-2')">2x</button>
+            </div>
+        </div>
+
+        <div class="intro" id="intro" onclick="enterSite()">
+            <p class="intro-text"><span>Press to enter</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

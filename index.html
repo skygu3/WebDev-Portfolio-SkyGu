@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sky Gu</title>
+        <link rel="icon" href="barca icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="global-goal.html">Global Goal</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design-thinking.html">Behind the Curtain</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+
+        <header>
+            <h1>About Me</h1>
+        </header>
+
+        <div class="card">
+            <p>Hi, my name is <strong>Sky Gu</strong>.</p>
+            <p><em>Grade 12</em> student learning web development.</p>
+        </div>
+
+        <hr>
+
+        <h2>My Interests</h2>
+
+        <ul>
+            <li>Gaming</li>
+            <li>Music</li>
+            <li>Basketball &amp; Soccer &amp; Hockey</li>
+        </ul>
+
+        <hr>
+
+        <img src="pedri.jpeg" alt="Pedri, my loved FC Barcelona player" width="350" title="My loved player from Barcelona">
+
+        <hr>
+
+        <div class="card">
+            <h2>My Goals</h2>
+            <p>This year I want to:</p>
+            <ol>
+                <li>Finish high school</li>
+                <li>Learn more coding stuffs</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <button type="button" onclick="showBarcelonaPhoto()">Show the team photo of FC Barcelona</button>
+
+        <hr>
+
+        <a href="https://github.com/skygu3?tab=repositories" target="_blank">My GitHub Repositories</a>
+
+        </div>
+
+        <footer>
+            <small>&copy; 2026 Sky Gu. All rights reserved.</small>
+        </footer>
+
+        <div class="tts-wrap" id="tts-wrap">
+            <div class="tts-toggle" onclick="toggleTTS()"><span id="tts-arrow">&#9660;</span></div>
+            <div class="tts-bar" id="tts-bar">
+                <button type="button" onclick="readPage()">&#9654; Read</button>
+                <button type="button" id="btn-stop" onclick="stopReading()"><span style="font-size: 1.4em;">&#9632;</span> Stop</button>
+                <button type="button" id="btn-05" onclick="setSpeed(0.5, 'btn-05')">0.5x</button>
+                <button type="button" id="btn-1" style="background-color: darkred;" onclick="setSpeed(1, 'btn-1')">1x</button>
+                <button type="button" id="btn-15" onclick="setSpeed(1.5, 'btn-15')">1.5x</button>
+                <button type="button" id="btn-2" onclick="setSpeed(2, 'btn-2')">2x</button>
+            </div>
+        </div>
+
+        <div class="modal" id="barca-modal" onclick="closeModalOnBackground()">
+            <div class="modal-photo">
+                <img src="barca team.jpeg" alt="FC Barcelona Team Photo">
+                <br>
+                <button type="button" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+
+        <div class="intro" id="intro" onclick="enterSite()">
+            <p class="intro-text"><span>Press to enter</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

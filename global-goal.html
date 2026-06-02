@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Global Goal | Sky Gu</title>
+        <link rel="icon" type="image/png" href="barca icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="global-goal.html">Global Goal</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design-thinking.html">Behind the Curtain</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-content">
+
+        <header>
+            <h1>UN Global Goal</h1>
+        </header>
+
+        <div class="sdg-box">
+            <h2>SDG 4 — Quality Education</h2>
+            <p>"Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all."</p>
+            <p>— United Nations, 2015</p>
+        </div>
+
+        <hr>
+
+        <div class="card">
+            <h2>Why I Chose This Goal</h2>
+            <p>As a student learning to code, I believe access to quality education — especially in technology — is one of the most important things we can give to young people around the world.</p>
+            <p>Not everyone has the opportunity to take a course like CS12 or access to computers and the internet. This gap affects people's ability to participate in the modern economy.</p>
+        </div>
+
+        <div class="card">
+            <h2>How This Connects to Web Development</h2>
+            <p>The web is one of the greatest tools for sharing knowledge. Free tutorials, documentation, and open-source code help people learn to build things online regardless of where they live.</p>
+            <p>By learning to build websites, I am also learning how to contribute to that ecosystem.</p>
+        </div>
+
+        <hr>
+
+        <h2>What Can Be Done</h2>
+
+        <ul>
+            <li>Expand free coding education in under-resourced communities</li>
+            <li>Ensure school computer labs have up-to-date equipment</li>
+            <li>Create multilingual learning resources</li>
+            <li>Support teachers with training in digital tools</li>
+        </ul>
+
+        <hr>
+
+        <a href="https://sdgs.un.org/goals" target="_blank" title="UN SDG official website">Learn more at sdgs.un.org</a>
+
+        </div>
+
+        <footer>
+            <small>&copy; 2026 Sky Gu. All rights reserved.</small>
+        </footer>
+
+        <div class="tts-wrap" id="tts-wrap">
+            <div class="tts-toggle" onclick="toggleTTS()"><span id="tts-arrow">&#9660;</span></div>
+            <div class="tts-bar" id="tts-bar">
+                <button type="button" onclick="readPage()">&#9654; Read</button>
+                <button type="button" id="btn-stop" onclick="stopReading()"><span style="font-size: 1.4em;">&#9632;</span> Stop</button>
+                <button type="button" id="btn-05" onclick="setSpeed(0.5, 'btn-05')">0.5x</button>
+                <button type="button" id="btn-1" style="background-color: darkred;" onclick="setSpeed(1, 'btn-1')">1x</button>
+                <button type="button" id="btn-15" onclick="setSpeed(1.5, 'btn-15')">1.5x</button>
+                <button type="button" id="btn-2" onclick="setSpeed(2, 'btn-2')">2x</button>
+            </div>
+        </div>
+
+        <div class="intro" id="intro" onclick="enterSite()">
+            <p class="intro-text"><span>Press to enter</span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
