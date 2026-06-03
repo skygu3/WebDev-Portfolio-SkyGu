@@ -36,7 +36,7 @@
         <div class="stages">
             <div class="stage">
                 <h3>1. Empathize</h3>
-                <p>I thought about who would visit my site — classmates, teachers, or future employers.</p>
+                <p>I thought about who would visit my site: classmates, teachers, friends.</p>
             </div>
             <div class="stage">
                 <h3>2. Define</h3>
@@ -63,49 +63,74 @@
         <div class="card">
             <h3>Visual Hierarchy</h3>
             <p>Larger headings draw attention to the most important content. The footer is small and gray so it does not compete with the main content.</p>
+            <img src="footer.png" alt="Footer example" height="150">
         </div>
 
         <div class="card">
             <h3>Consistency</h3>
             <p>Every page uses the same nav bar, card style, color scheme, and font. This makes the site feel unified.</p>
+            <img src="nav.png" alt="Consistent nav bar example" height="150">
         </div>
 
         <div class="card">
             <h3>Navigability</h3>
             <p>The nav bar appears at the top of every page. Users can always find their way without using the browser back button.</p>
-            <img src="navv.png" alt="Navigation bar example" width="400">
+            <img src="navv.png" alt="Navigation bar example" height="150">
         </div>
 
         <div class="card">
             <h3>Color &amp; Typography</h3>
             <p>I used Arial with Helvetica as fallback for the main text, and a rounded font for the welcome page. Dark blue on the soft white background gives strong contrast. Dark red is used only for hover effects and accents.</p>
+            <img src="hovers.png" alt="Hover effect example" height="150">
+            <img src="colors.png" alt="Color scheme example" height="180">
+        </div>
+
+        <hr>
+
+        <h2>Challenging Parts</h2>
+
+        <div class="card">
+            <ul>
+                <li>Making the welcome page show only on first load or refresh.</li>
+                <li>Keeping the nav bar consistent across every page.</li>
+                <li>Getting the Read Aloud feature to work with different speeds.</li>
+                <li>Lining up images so they look balanced.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>What I Learned</h2>
+
+        <div class="card">
+            <ul>
+                <li>How to plan a multi-page site before building it.</li>
+                <li>Keeping HTML, CSS, and JavaScript organized in separate files.</li>
+                <li>Testing in the browser early to catch layout problems.</li>
+                <li>Small design choices make a big difference in how a site feels.</li>
+            </ul>
         </div>
 
         <hr>
 
         <h2>Beyond the Course</h2>
-        <p>Some features on this site go beyond what we learned in CS12. I researched them online and used AI assistance to add them. Here is a quick list of the extra tools I used:</p>
+        <p>Some features go beyond CS12. I researched them online and used AI assistance to add them:</p>
 
         <div class="card">
             <h3>Extra JavaScript</h3>
             <ul>
-                <li><strong>var</strong> variables to remember the chosen reading speed</li>
-                <li><strong>Web Speech API</strong> (speechSynthesis) for the Read Aloud feature</li>
-                <li>The <strong>event</strong> object and changing element <strong>.style</strong> to update buttons and pop-ups</li>
-                <li><strong>sessionStorage</strong> to remember if the visitor has already entered the site</li>
-                <li>The <strong>Performance Navigation API</strong> to tell a page refresh apart from clicking Home, so the welcome page only shows on first load or refresh</li>
+                <li><strong>Web Speech API</strong> for the Read Aloud feature</li>
+                <li><strong>sessionStorage</strong> to remember the visitor and reading speed</li>
+                <li><strong>Performance Navigation API</strong> to show the welcome page only on first load or refresh</li>
             </ul>
         </div>
 
         <div class="card">
             <h3>Extra CSS</h3>
             <ul>
-                <li><strong>opacity</strong>, <strong>visibility</strong> and <strong>transition</strong> for smooth fade in and fade out effects</li>
-                <li><strong>backdrop-filter: blur</strong> to blur the background behind the team photo</li>
-                <li><strong>rgba()</strong> colors for semi-transparent overlays and borders</li>
-                <li><strong>linear-gradient</strong> over a background image to blend the team photo with white for the whole-site background</li>
-                <li><strong>background-attachment: fixed</strong> to keep that background still while scrolling</li>
-                <li><strong>letter-spacing</strong> to soften the look of the welcome text</li>
+                <li><strong>opacity</strong>, <strong>visibility</strong>, <strong>transition</strong> for fade effects</li>
+                <li><strong>backdrop-filter: blur</strong> and <strong>rgba()</strong> for the blurred overlay</li>
+                <li><strong>linear-gradient</strong> + <strong>background-attachment: fixed</strong> for the site background</li>
             </ul>
         </div>
 
