@@ -82,6 +82,7 @@ var speechRate = 1;
 function readPage() {
     window.speechSynthesis.cancel();
     var msg = new SpeechSynthesisUtterance(document.getElementById('main-content').innerText);
+    msg.lang = 'en-US';
     msg.rate = speechRate;
     msg.onend = function() {
         document.getElementById('btn-stop').innerHTML = '<span style="font-size: 1.4em;">&#9632;</span> Stop';
